@@ -10,6 +10,8 @@ from flask_graphql import GraphQLView
 import graphene
 
 # Define a simple schema with a single query
+# Query is the name for this object in GraphQL
+# since it is more dynamic than just a REST endpoint
 class Query(graphene.ObjectType):
     hello = graphene.String()
 
